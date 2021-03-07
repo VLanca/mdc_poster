@@ -26,6 +26,8 @@ body {
 	text-align: left;
 	border: 2px solid black;
 	border-style: dotted dashed solid double;
+	margin: -10px 0;
+	
 }
 /* .box1 {
     color: black;
@@ -57,12 +59,16 @@ body {
 	grid-column: span 8;
 	width: 500px;
 	height: 250px;
+	/*margin-left: */
+	
 }
 .box:nth-child(9), .box:nth-child(12) {
 	grid-column: span 5;
 	width: 500px;
 	height: 440px;
-}
+	
+	
+	}
 .box:nth-child(10), .box:nth-child(13) {
 	grid-column: span 7;
 }
@@ -85,7 +91,7 @@ body {
 h1 {
 	font-size: 50px;
 	font-weight: bold;
- font-family: ' Arial, 'sans-serif'
+    font-family: ' Arial, 'sans-serif'
 }
 h4 {
 	background: white;
@@ -124,3 +130,4 @@ footer {
 	font-size: 10px;
 	text-align: center;
 }
+
