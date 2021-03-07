@@ -125,9 +125,11 @@ h5 {
  font-family: ' Arial, 'sans-serif'
 }
 footer {
-	background: black;
-	color: white;
+	background:white;
+	color: black;
 	font-size: 10px;
 	text-align: center;
+	border: 2px solid black;
+	border-style: dotted dashed solid double;
 }
 
