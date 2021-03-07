@@ -1,0 +1,126 @@
+@charset "utf-8";
+::selection {
+	background-color: #00FF23;
+}
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	margin: 0;
+	background-color: white;
+	overflow-x: hidden;
+	color: black;/*	text-align: center;*/
+	background-repeat: no-repeat;
+	background-size: 100%;
+	/*background-attachment: fixed;*/
+	background-image: url('../img/11-01-01.jpg')
+}
+.grid {
+	display: grid;
+	grid-template-rows: repeat(2, 1fr);
+	grid-template-columns: repeat(5, 1fr);
+	grid-gap: 10px;
+}
+.box {
+	color: black;
+	padding: 7px;
+	background: white;
+	text-align: left;
+	border: 2px solid black;
+	border-style: dotted dashed solid double;
+}
+/* .box1 {
+    color: black;
+    padding: 7px;
+    background: white;
+    text-align: center;
+	border: 2px solid black;
+	border-style: dotted dashed solid double;
+    }*/
+.box:nth-child(2), .box:nth-child(21) {
+	grid-column: span 13;
+}
+.box:nth-child(3), .box:nth-child(20) {
+	grid-column: span 2;
+}
+.box:nth-child(4), .box:nth-child(19) {
+	grid-column: span 10;
+}
+.box:nth-child(5), .box:nth-child(18) {
+	grid-column: span 3;
+}
+.box:nth-child(6), .box:nth-child(17) {
+	grid-column: span 9;
+}
+.box:nth-child(7), .box:nth-child(16) {
+	grid-column: span 4;
+}
+.box:nth-child(8), .box:nth-child(15) {
+	grid-column: span 8;
+	width: 500px;
+	height: 250px;
+}
+.box:nth-child(9), .box:nth-child(12) {
+	grid-column: span 5;
+	width: 500px;
+	height: 440px;
+}
+.box:nth-child(10), .box:nth-child(13) {
+	grid-column: span 7;
+}
+.box:nth-child(11), .box:nth-child(12) {
+	grid-column: span 6;
+}
+
+@media screen and (max-width: 575px) {
+.grid {
+	display: block;
+}
+.box {
+	margin: 10px 0;
+}
+}
+@font-face {
+	font-family: 'fonte3';
+	src: url('../fonts/Arialic Hollow.ttf')
+}
+h1 {
+	font-size: 50px;
+	font-weight: bold;
+ font-family: ' Arial, 'sans-serif'
+}
+h4 {
+	background: white;
+	animation: color-change 5s infinite;
+	text-align: center;
+	font-size: 45px;
+	font-family: 'fonte3'
+}
+@keyframes color-change {
+ 0% {
+color: black;
+}
+ 50% {
+color: black;
+}
+ 100% {
+color: #00FF23;   /*grey*/
+}
+}
+h2 {
+	font-size: 30px;
+ font-family: ' Arial, 'sans-serif'
+}
+h3 {
+	color: gray;
+	font-size: 15px;
+ font-family: ' Arial, 'sans-serif'
+}
+h5 {
+	font-size: 15px;
+ font-family: ' Arial, 'sans-serif'
+}
+footer {
+	background: black;
+	color: white;
+	font-size: 10px;
+	text-align: center;
+}
