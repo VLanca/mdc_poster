@@ -67,7 +67,8 @@ body {
 .box:nth-child(9), .box:nth-child(12) {
 	grid-column: span 5;
 	width: 500px;
-	height: 440px;
+	height: 380px;
+	
 	
 	
 	}
